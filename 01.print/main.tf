@@ -1,3 +1,3 @@
 output "one" {
- value = "Hello world"
- }
+  value = "hello world"
+}
