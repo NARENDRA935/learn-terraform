@@ -3,7 +3,7 @@ variable "v1" {
 }
 
 variable "v2" {
-  default = [ "Hello world",100,true ]
+  default = [ "Hello world", 100, true ]
 }
 
 variable "v3" {
