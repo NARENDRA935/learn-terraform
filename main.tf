@@ -1,3 +1,4 @@
-output "one" {
- value = "Hello world"
- }
+Output "one" {
+  value = "Hello world"
+}
+
