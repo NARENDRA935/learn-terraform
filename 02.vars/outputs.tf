@@ -10,9 +10,13 @@ output "Second_value_in_list"{
   value = var.v2[1]
 }
 
-output "value_in_Map" {
+output "value_in_map" {
   value = var.v3["abc"]
 }
+
+
+
+
 
 
 
