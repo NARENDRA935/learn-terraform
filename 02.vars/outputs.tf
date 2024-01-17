@@ -10,5 +10,5 @@ output "Second_value_in_list"{
   value = var.v2[1]
 }
 output "value_in_map" {
-  vaule = var.v3["abc"]
+  value = var.v3["abc"]
 }
