@@ -19,6 +19,9 @@ variable "fruits2" {
   }
 }
 
+provider "dummy" {
+  name = "foo"
+}
 
 resource "dummy_thing" "this1" {
   for_each = var.fruits1
