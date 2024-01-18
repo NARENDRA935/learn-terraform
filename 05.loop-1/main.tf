@@ -17,3 +17,18 @@ resource "aws_instance" "test" {
   }
 }
 
+variable "components" {
+  default = ["frontend", "backend", "mysql"]
+}
+
+
+resource "aws_instance" "test" {
+  count                  = length(var.components)
+  ami                    = "ami-0f3c7d07486cad139"
+  instance_type          = "t3.micro"
+  vpc_security_group_ids = ["sg-0eda81a962cebfc79"]
+
+  tags = {
+    Name = element(var.components, count.index)
+  }
+}
